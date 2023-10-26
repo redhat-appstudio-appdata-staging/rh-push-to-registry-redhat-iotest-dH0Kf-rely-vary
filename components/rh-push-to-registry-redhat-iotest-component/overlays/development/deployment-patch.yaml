@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: rh-push-to-registry-redhat-iotest-component
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/dev-release-team-tenant/rh-push-to-registry-redhat-iotest/rh-push-to-registry-redhat-iotest-component@sha256:edc0b5a28f4f4eb9e3bd05265711f911e5d63102a5fbd3ec09d557cea57f1da2
+        name: my-python
+        resources: {}
+status: {}
